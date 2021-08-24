@@ -1,0 +1,93 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "git push --follow-tags"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "sunmao-editor",
+  "author": "李茂峰",
+  "module": "dist/sunmao-editor.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/sunmao-editor.cjs.production.min.js",
+      "limit": "10 KB",
+      "ignore": [
+        "fonteditor-core"
+      ]
+    },
+    {
+      "path": "dist/sunmao-editor.esm.js",
+      "limit": "10 KB",
+      "ignore": [
+        "fonteditor-core"
+      ]
+    }
+  ],
+  "devDependencies": {
+    "@asany/editor": "^0.2.0",
+    "@asany/icons": "^0.1.10",
+    "@babel/core": "^7.15.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@size-limit/preset-small-lib": "^5.0.3",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/addons": "^6.3.7",
+    "@storybook/react": "^6.3.7",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "babel-loader": "^8.2.2",
+    "conventional-changelog-cli": "^2.1.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^7.0.1",
+    "pinst": "^2.1.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "size-limit": "^5.0.3",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.3.5"
+  },
+  "resolutions": {
+    "**/@typescript-eslint/eslint-plugin": "^4.1.1",
+    "**/@typescript-eslint/parser": "^4.1.1"
+  }
+}
