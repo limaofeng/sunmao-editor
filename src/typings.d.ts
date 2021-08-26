@@ -3,7 +3,7 @@ import { IBlockCoreData } from 'sunmao';
 
 export interface IComponentData {
   template: string;
-  props: IBlockCoreData[];
+  blocks: IBlockCoreData[];
 }
 
 export interface SunmaoEditorProps {

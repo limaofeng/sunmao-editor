@@ -10,9 +10,9 @@ function Workspace() {
   const editor = useEditor();
   const sketch = useSketch();
 
-  const data = useSelector<IComponentData>((state) => state.project.data, isEqual);
+  const data = useSelector<IComponentData>((state) => state.project, isEqual);
 
-  const component = useReactComponent(data.template, data.props);
+  const component = useReactComponent(data.template, data.blocks);
 
   useEffect(() => {
     return sketch.on('block-click', (id: string) => {

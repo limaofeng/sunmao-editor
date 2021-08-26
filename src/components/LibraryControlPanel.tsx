@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 import React, { memo, useCallback, useMemo, useRef } from 'react';
 import { IconLibraryDefinition, parseIconFile } from '@asany/icons';
 
-import { ComponentPropertyType } from '../../../src/typings';
+import { IFieldType } from '../../../src/typings';
 import { createDynaActionForm } from '../../../src/utils/BlockAside';
 
 const IMPORT_ICONS = gql`
@@ -107,12 +107,12 @@ function LibraryControlPanel(props: LibraryControlPanelProps) {
         fields: [
           {
             name: 'name',
-            type: ComponentPropertyType.String,
+            type: IFieldType.String,
             placeholder: 'Untitled Name',
           },
           {
             name: 'unicode',
-            type: ComponentPropertyType.String,
+            type: IFieldType.String,
             placeholder: 'Untitled Unicode',
           },
         ],

@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import Sunmao, { SketchProvider, library, component, SunmaoProvider } from 'sunmao';
 import editorLibraries from '../src/sunmao';
-import SunmaoEditor from './sketch/SunmaoEditor';
+import SunmaoEditor from '../src';
 import Showme from './sketch/components/Showme';
 
 const meta: Meta = {
@@ -53,7 +53,7 @@ const Template: Story<any> = (_args) => {
                 name="测试"
                 data={{
                   template: 'cn.asany.ui.sunmao.test.Showme',
-                  props: [
+                  blocks: [
                     {
                       key: 'xxx',
                       props: { title: '观自在菩萨' },
