@@ -1,6 +1,7 @@
 name: Deploy Storybook
 on: 
   push:
+    branches: [master]
     paths: ["stories/**", "src/**"]
 jobs:
   build-and-deploy:
