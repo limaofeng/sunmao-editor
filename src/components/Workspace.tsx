@@ -1,9 +1,10 @@
-import isEqual from 'lodash-es/isEqual';
 import React from 'react';
 import { useEffect } from 'react';
-import { useReactComponent, useSketch } from 'sunmao';
 
-import { buildAside, useEditor, useSelector } from '@asany/editor';
+import isEqual from 'lodash-es/isEqual';
+import { useReactComponent, useSketch } from 'sunmao';
+import { useEditor, useSelector } from '@asany/editor';
+
 import { IComponentData } from '../typings';
 
 function Workspace() {
@@ -21,19 +22,20 @@ function Workspace() {
       // 设置属性配置面板
       editor.scena.setSelectedTargets([document.getElementById(id)!]);
       // 打开属性配置面板
-      const tabs = buildAside(block.customizer!);
       const store = component.store;
-      editor.aside.open(tabs, {
-        value: store.getState().blocks.find((item) => item.key === block.key)!.props,
+      editor.aside.open({
+        customizer: block.customizer!,
+        value: store.getBlock(block.key)!.props,
         update: block.update,
         watchValue: (callback: (value: any) => void) => {
           const handleChange = () => {
-            callback(store.getState().blocks.find((item) => item.key === block.key)!.props);
+            callback(store.getBlock(block.key)!.props);
           };
           return store.subscribe(handleChange);
         },
       });
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return React.createElement(component);

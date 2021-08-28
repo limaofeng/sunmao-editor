@@ -1,5 +1,6 @@
-import { AsanyProject } from '../../src/typings';
 import { IBlockCoreData } from 'sunmao';
+
+import { AsanyProject } from '../../src/typings';
 
 export interface IComponentData {
   template: string;

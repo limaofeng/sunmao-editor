@@ -1,12 +1,14 @@
-import './style/index.less';
-import 'overlayscrollbars/css/OverlayScrollbars.css';
+import React from 'react';
 
 import { EditorPlugin } from '@asany/editor';
-import React from 'react';
 
 import Navigation from './components/Navigation';
 import Workspace from './components/Workspace';
 import reducer from './reducer';
+
+// eslint-disable-next-line import/order
+import 'overlayscrollbars/css/OverlayScrollbars.css';
+import './style/index.less';
 
 export default {
   id: 'icon',

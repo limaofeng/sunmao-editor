@@ -1,5 +1,5 @@
 import { ICustomizer } from 'sunmao';
-import { IPluginActionType, AsanyAction } from '@asany/editor';
+import { AsanyAction, IPluginActionType } from '@asany/editor';
 
 export enum SketchActionType {
   /**
