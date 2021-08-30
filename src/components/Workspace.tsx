@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-import isEqual from 'lodash-es/isEqual';
+import isEqual from 'lodash/isEqual';
 import { useReactComponent, useSketch } from 'sunmao';
 import { useEditor, useSelector } from '@asany/editor';
 

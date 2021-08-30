@@ -8,7 +8,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -27,7 +27,9 @@
     "postversion": "git push --follow-tags"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "@asany/editor": ">=0.2.5",
+    "react": ">=16",
+    "sunmao": ">=0.2.5"
   },
   "prettier": {
     "printWidth": 120,
@@ -42,14 +44,14 @@
   "size-limit": [
     {
       "path": "dist/sunmao-editor.cjs.production.min.js",
-      "limit": "10 KB",
+      "limit": "200 KB",
       "ignore": [
         "fonteditor-core"
       ]
     },
     {
       "path": "dist/sunmao-editor.esm.js",
-      "limit": "10 KB",
+      "limit": "200 KB",
       "ignore": [
         "fonteditor-core"
       ]
@@ -57,8 +59,8 @@
   ],
   "devDependencies": {
     "@apollo/client": "^3.4.9",
-    "@asany/editor": "^0.2.5",
-    "@asany/icons": "^0.1.10",
+    "@asany/editor": "^0.2.6",
+    "@asany/icons": "^0.1.11",
     "@asany/sortable": "^0.1.22",
     "@babel/core": "^7.15.0",
     "@commitlint/cli": "^13.1.0",
@@ -83,6 +85,7 @@
     "husky": "^7.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest-fetch-mock": "^3.0.3",
+    "jest-transform-graphql": "^2.1.0",
     "less": "^4.1.1",
     "less-loader": "^7.3.0",
     "lodash-es": "^4.17.21",
@@ -96,7 +99,7 @@
     "react-is": "^17.0.2",
     "rollup-plugin-postcss": "^4.0.1",
     "size-limit": "^5.0.3",
-    "sunmao": "^0.2.5",
+    "sunmao": "^0.2.6",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.3.5"
@@ -105,13 +108,11 @@
     "**/@typescript-eslint/eslint-plugin": "^4.1.1",
     "**/@typescript-eslint/parser": "^4.1.1"
   },
-  "dependencies": {
-    "react-use": "^17.2.4"
-  },
   "jest": {
+    "transform": {
+      "\\.(gql|graphql)$": "jest-transform-graphql"
+    },
     "moduleNameMapper": {
-      "^lodash-es$": "lodash",
-      "^lodash-es/.*": "lodash",
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "identity-obj-proxy"
     },
