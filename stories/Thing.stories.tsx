@@ -54,7 +54,7 @@ const Template: Story<any> = (_args) => {
               name="测试"
               data={{
                 template: 'cn.asany.ui.sunmao.test.Showme',
-                props: [
+                blocks: [
                   {
                     key: 'xxx',
                     props: { title: '观自在菩萨' },

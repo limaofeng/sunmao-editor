@@ -11,7 +11,7 @@ function Workspace() {
   const editor = useEditor();
   const sketch = useSketch();
 
-  const data = useSelector<IComponentData>((state) => state.project, isEqual);
+  const data = useSelector<IComponentData>((state) => state.project.data, isEqual);
 
   const component = useReactComponent(data.template, data.blocks);
 
