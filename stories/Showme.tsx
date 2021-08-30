@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+
 import { useBlock } from 'sunmao';
-import { IFieldType } from 'sunmao';
 
 function Second({ className, id }: any) {
-  const { key, props, update, Provider } = useBlock({
+  const { key, props, Provider } = useBlock({
     key: 'Second-' + id,
     icon: '',
     title: '',
@@ -14,7 +14,7 @@ function Second({ className, id }: any) {
       fields: [
         {
           name: 'title',
-          type: IFieldType.String,
+          type: 'String',
         },
       ],
     },
@@ -27,7 +27,7 @@ function Second({ className, id }: any) {
 }
 
 function Showme() {
-  const { key, props, update, Provider } = useBlock({
+  const { key, props, Provider } = useBlock({
     key: 'xxx',
     icon: '',
     title: '',
@@ -38,7 +38,7 @@ function Showme() {
       fields: [
         {
           name: 'title',
-          type: IFieldType.String,
+          type: 'String',
         },
       ],
     },

@@ -1,5 +1,6 @@
-import AsanyEditor, { useDeepCompareMemo } from '@asany/editor';
 import React from 'react';
+
+import AsanyEditor, { useDeepCompareMemo } from '@asany/editor';
 import { SketchProvider } from 'sunmao';
 
 import SketchPlugin from './plugin';
