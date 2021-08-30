@@ -85,7 +85,6 @@
     "husky": "^7.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest-fetch-mock": "^3.0.3",
-    "jest-transform-graphql": "^2.1.0",
     "less": "^4.1.1",
     "less-loader": "^7.3.0",
     "lodash-es": "^4.17.21",
@@ -109,9 +108,7 @@
     "**/@typescript-eslint/parser": "^4.1.1"
   },
   "jest": {
-    "transform": {
-      "\\.(gql|graphql)$": "jest-transform-graphql"
-    },
+    "verbose": true,
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "identity-obj-proxy"
