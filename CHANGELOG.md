@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/limaofeng/sunmao-editor/compare/v0.1.0...v0.1.1) (2021-09-02)
+
+
+### Bug Fixes
+
+* 解决 typings 引用错误的问题 ([1afd37b](https://github.com/limaofeng/sunmao-editor/commit/1afd37b9512664c90a547612daebabd60df1d2b4))
+
+
+
 # 0.1.0 (2021-09-02)
 
 
