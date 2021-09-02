@@ -1,3 +1,12 @@
+## [0.1.2](https://github.com/limaofeng/sunmao-editor/compare/v0.1.1...v0.1.2) (2021-09-02)
+
+
+### Features
+
+* 打包时包含 types 目录 ([e6d5150](https://github.com/limaofeng/sunmao-editor/commit/e6d5150366ae11ea96ead444d339a82c021ef4e3))
+
+
+
 ## [0.1.1](https://github.com/limaofeng/sunmao-editor/compare/v0.1.0...v0.1.1) (2021-09-02)
 
 
