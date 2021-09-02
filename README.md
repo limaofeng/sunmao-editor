@@ -12,7 +12,7 @@
 yarn add @apollo/client @asany/icons \
          @asany/sortable @asany/editor \
          react-dnd react-dnd-html5-backend \
-         sunmao sunmao-editor
+         sunmao sunmao-editor moment lodash-es graphql antd
 ```
 
 ----
