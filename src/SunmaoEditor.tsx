@@ -3,8 +3,9 @@ import React from 'react';
 import AsanyEditor, { useDeepCompareMemo } from '@asany/editor';
 import { SketchProvider } from 'sunmao';
 
+import { SunmaoEditorProps, SunmaoProject } from '../types';
+
 import SketchPlugin from './plugin';
-import { SunmaoEditorProps, SunmaoProject } from './typings';
 
 function SunmaoEditor(props: SunmaoEditorProps) {
   const { id, name, data } = props;

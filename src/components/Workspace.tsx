@@ -5,7 +5,7 @@ import isEqual from 'lodash/isEqual';
 import { useReactComponent, useSketch } from 'sunmao';
 import { useEditor, useSelector } from '@asany/editor';
 
-import { IComponentData } from '../typings';
+import { IComponentData } from '../../types';
 
 function Workspace() {
   const editor = useEditor();

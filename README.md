@@ -8,6 +8,12 @@
 
 为 `榫卯` 提供组件的配置逻辑
 
+```
+yarn add @apollo/client @asany/icons \
+         @asany/sortable @asany/editor \
+         react-dnd react-dnd-html5-backend \
+         sunmao sunmao-editor
+```
 
 ----
 
