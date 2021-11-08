@@ -94,16 +94,16 @@
     "postcss": "^7.0.39",
     "postcss-modules": "^4.2.2",
     "react": "^17.0.2",
-    "react-dnd": "^14.0.3",
-    "react-dnd-html5-backend": "^14.0.1",
+    "react-dnd": "^14.0.4",
+    "react-dnd-html5-backend": "^14.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
     "rollup-plugin-postcss": "^4.0.1",
-    "size-limit": "^5.0.5",
-    "sunmao": "^0.2.6",
+    "size-limit": "^6.0.4",
+    "sunmao": "^0.2.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.4"
   },
   "resolutions": {
     "**/@typescript-eslint/eslint-plugin": "^4.1.1",
