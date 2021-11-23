@@ -1,3 +1,12 @@
+## [0.1.6](https://github.com/limaofeng/sunmao-editor/compare/v0.1.5...v0.1.6) (2021-11-23)
+
+
+### Features
+
+* 功能完善 ([709a2fb](https://github.com/limaofeng/sunmao-editor/commit/709a2fb15e8a5bc951e291d6cb30ca46866fa2d5))
+
+
+
 ## [0.1.5](https://github.com/limaofeng/sunmao-editor/compare/v0.1.4...v0.1.5) (2021-11-08)
 
 
