@@ -1,9 +1,8 @@
 import React, { useCallback } from 'react';
 
 import Icon from '@asany/icons';
-import isEqual from 'lodash-es/isEqual';
-import { render } from '@asany/editor/dist/components/toolbar/Toolbar';
-import { useSelector, useTools } from '@asany/editor';
+import isEqual from 'lodash/isEqual';
+import { render, useSelector, useTools } from '@asany/editor';
 
 type NavigationProps = {
   onBack?: () => void;

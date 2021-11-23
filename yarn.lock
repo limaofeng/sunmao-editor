@@ -54,10 +54,10 @@
     tslib "^2.3.0"
     zen-observable-ts "^1.2.0"
 
-"@asany/editor@^0.2.12":
-  version "0.2.12"
-  resolved "https://registry.npmjs.org/@asany/editor/-/editor-0.2.12.tgz#ea1418ad96710fb6752f39573cbcf6bfaa8c5528"
-  integrity sha512-2L9lDVS9muGT6g7IP2Rckmioxj2fsU1GOn5Tl1FcK/j5yGfKROj2HVIYFlFGiZ+bBNDmeOtt+DQRvvlbnt2fGw==
+"@asany/editor@^0.2.13":
+  version "0.2.13"
+  resolved "https://registry.npmjs.org/@asany/editor/-/editor-0.2.13.tgz#86ca412cf6d6b8dfe2d55994f9dc7a2f6c3886b7"
+  integrity sha512-+k1r9oOejKttNDTwwNHaepnTcQ2k0cdrY/ZDPlLDySMJS7A8EmuP/oI2AOxdNoU/z8fyNTzH997/P0m2uypYFg==
   dependencies:
     "@asany/icons" "^0.2.2"
     "@asany/sortable" "^0.1.30"

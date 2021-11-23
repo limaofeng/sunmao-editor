@@ -2,8 +2,7 @@ import React from 'react';
 
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 import type { Sketch } from 'sunmao';
-
-import { EditorPlugin } from '../typings';
+import { EditorPlugin } from '@asany/editor';
 
 import Navigation from './components/Navigation';
 import Workspace from './components/Workspace';
