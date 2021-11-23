@@ -1,3 +1,12 @@
+## [0.1.7](https://github.com/limaofeng/sunmao-editor/compare/v0.1.6...v0.1.7) (2021-11-23)
+
+
+### Features
+
+* 解决编译错误 ([fb7c93a](https://github.com/limaofeng/sunmao-editor/commit/fb7c93aafd31b567d2e90fde2c882004a00e7a71))
+
+
+
 ## [0.1.6](https://github.com/limaofeng/sunmao-editor/compare/v0.1.5...v0.1.6) (2021-11-23)
 
 
