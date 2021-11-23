@@ -1,31 +1,45 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 
 import Icon from '@asany/icons';
+import isEqual from 'lodash-es/isEqual';
+import { render } from '@asany/editor/dist/components/toolbar/Toolbar';
+import { useSelector, useTools } from '@asany/editor';
 
-function Navigation() {
+type NavigationProps = {
+  onBack?: () => void;
+};
+
+function Navigation(props: NavigationProps) {
+  const { onBack } = props;
+
+  const tools = useTools((state) => state.ui.toolbar.tools);
+
+  const focus = useSelector(
+    (state) =>
+      state.ui.toolbar.tools.reduce((data, item) => {
+        data[item.id] = item.useSelector && item.useSelector(state);
+        return data;
+      }, {} as any),
+    isEqual
+  );
+
+  const handClickBack = useCallback(() => onBack && onBack(), [onBack]);
+
   return (
-    <div className="ie-navigation">
+    <div className="sunmao-navigation">
       <div className="navigation-left">
-        <Icon name="ToolbarBack" className="back-icon toolbar-icon" />
-        <span className="title">ASANY </span>
+        <Icon name="AsanyEditor/ToolbarBack" onClick={handClickBack} className="back-icon toolbar-icon" />
+        <span className="title">SUNMAO </span>
       </div>
-      <div className="ie-navigation-container">
-        <div className="ie-search">
-          <div className="ie-icon-typs">
-            <select>
-              <option>Images</option>
-            </select>
-          </div>
-          <div className="ie-icon-input">
-            <input placeholder="Search" />
-          </div>
+      <div className="sunmao-navigation-container">
+        <div className="toolbar-center">
+          {tools.filter((item) => item.position === 'left' && item.isVisibled!(focus[item.id])).map(render, focus)}
         </div>
-      </div>
-      <div className="ie-my-libraries">
-        <a className="button-text">My Libraries</a>
+        <div className="toolbar-right">
+          {tools.filter((item) => item.position === 'right' && item.isVisibled!(focus[item.id])).map(render, focus)}
+        </div>
       </div>
     </div>
   );
 }
-
 export default Navigation;

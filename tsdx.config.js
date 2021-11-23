@@ -6,7 +6,6 @@ module.exports = {
     config.plugins = config.plugins.map((plugin) => {
       if (plugin && plugin.name === 'replace') {
         return replace({
-          'process.env.NODE_ENV': JSON.stringify(options.env),
           preventAssignment: true,
         });
       }

@@ -1,25 +1,40 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 
+import { SketchProvider, useSketch } from 'sunmao';
 import AsanyEditor, { useDeepCompareMemo } from '@asany/editor';
-import { SketchProvider } from 'sunmao';
+import type { AsanyProject } from '@asany/editor';
 
-import { SunmaoEditorProps, SunmaoProject } from '../types';
+import { SunmaoEditorProps, SunmaoProject } from './typings';
+import sketchPlugin from './plugin';
 
-import SketchPlugin from './plugin';
+function InternalSunmaoEditor(props: SunmaoEditorProps) {
+  const { id, name, data, dashboard, onSave } = props;
 
-function SunmaoEditor(props: SunmaoEditorProps) {
-  const { id, name, data } = props;
+  const sketch = useSketch();
 
   const project = useDeepCompareMemo<SunmaoProject>(() => ({ id, name, data, type: 'component' }), [id, name, data]);
 
+  const handleSave = useCallback(
+    (project: AsanyProject) => {
+      onSave && onSave(project.data);
+    },
+    [onSave]
+  );
+
+  return (
+    <AsanyEditor
+      plugins={[sketchPlugin(sketch, dashboard)]}
+      onSave={handleSave}
+      className="sunmao-editor"
+      project={project}
+    />
+  );
+}
+
+function SunmaoEditor(props: SunmaoEditorProps) {
   return (
     <SketchProvider>
-      <AsanyEditor
-        plugins={[SketchPlugin]}
-        onSave={(data) => console.log(data)}
-        className="icon-editor"
-        project={project}
-      />
+      <InternalSunmaoEditor {...props} />
     </SketchProvider>
   );
 }

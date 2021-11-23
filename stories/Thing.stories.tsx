@@ -52,7 +52,9 @@ const Template: Story<any> = (_args) => {
             <SunmaoEditor
               id="0"
               name="测试"
+              onSave={(data) => console.log(data)}
               data={{
+                id: '231',
                 template: 'cn.asany.ui.sunmao.test.Showme',
                 blocks: [
                   {
