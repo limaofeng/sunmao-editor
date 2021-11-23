@@ -1,3 +1,12 @@
+## [0.1.8](https://github.com/limaofeng/sunmao-editor/compare/v0.1.7...v0.1.8) (2021-11-23)
+
+
+### Bug Fixes
+
+* 愚蠢的 BUG ([e31f4a7](https://github.com/limaofeng/sunmao-editor/commit/e31f4a78a31d186b499c2624697c38f6bf31cfa0))
+
+
+
 ## [0.1.7](https://github.com/limaofeng/sunmao-editor/compare/v0.1.6...v0.1.7) (2021-11-23)
 
 
