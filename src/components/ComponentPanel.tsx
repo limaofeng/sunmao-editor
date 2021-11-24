@@ -55,8 +55,6 @@ function ComponentPanel() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [groups.map((item) => item.title).join(',')]);
 
-  console.log('groups', groups);
-
   return (
     <div className="componet-list-wrap">
       <Collapse
