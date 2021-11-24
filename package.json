@@ -59,7 +59,7 @@
     }
   ],
   "dependencies": {
-    "@asany/editor": "^0.2.13",
+    "@asany/editor": "^0.2.15",
     "@asany/icons": "^0.2.2",
     "@asany/sortable": "^0.1.30"
   },
