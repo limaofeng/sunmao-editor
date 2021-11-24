@@ -1,12 +1,20 @@
 module.exports = {
-  stories: ['../stories/**/*.stories.@(ts|tsx|js|jsx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  addons: [{
+    name: '@storybook/addon-postcss',
+    options: {
+      postcssLoaderOptions: {
+        implementation: require('postcss'),
+      },
+    },
+  }, '@storybook/addon-links', '@storybook/addon-essentials'],
   // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
   typescript: {
     check: true, // type-check stories during Storybook build
   },
-  stories: ['../stories/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  features: {
+    postcss: false,
+  },
   webpackFinal: async (config, { configType }) => {
     config.module.rules.push({
       test: /\.less$/,

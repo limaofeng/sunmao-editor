@@ -58,11 +58,13 @@
       ]
     }
   ],
-  "devDependencies": {
-    "@apollo/client": "^3.5.4",
+  "dependencies": {
     "@asany/editor": "^0.2.13",
     "@asany/icons": "^0.2.2",
-    "@asany/sortable": "^0.1.30",
+    "@asany/sortable": "^0.1.30"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.5.4",
     "@babel/core": "^7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
@@ -70,6 +72,7 @@
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.3.12",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addons": "^6.3.12",
     "@storybook/react": "^6.3.12",
     "@types/lodash-es": "^4.17.5",

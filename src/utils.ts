@@ -1,7 +1,8 @@
 import React, { DependencyList, useCallback, useEffect, useRef } from 'react';
 
-import { isEqual } from 'lodash';
-import { debounce, throttle as lodashThrottle } from 'lodash';
+import isEqual from 'lodash/isEqual';
+import debounce from 'lodash/debounce';
+import lodashThrottle from 'lodash/throttle';
 
 export function useDebounce<T extends (...args: any) => any>(fn: T, delay: number, deps?: DependencyList) {
   return useCallback(debounce(fn, delay), deps || []);
@@ -132,37 +133,6 @@ export const throttle = (callback: Function, options?: ThrottleOptions) => {
       prev = args;
     },
   };
-};
-
-type ReduxDispatch = (action: { type: string; payload?: any }) => void;
-
-export const useReduxDispatch = (): ReduxDispatch => {
-  try {
-    return require('umi').useDispatch();
-  } catch (e) {
-    console.warn('通过 umi 获取 Redux useDispatch 失败');
-    return (action) => {
-      console.error('未成功触发 ACTION ', action);
-    };
-  }
-};
-
-let useReduxSelectorWarningAlready = false;
-
-export const useReduxSelector = (selector: (state: any) => any, equalityFn?: (left: any, right: any) => boolean) => {
-  try {
-    return require('umi').useSelector(selector, equalityFn);
-  } catch (e) {
-    if (!useReduxSelectorWarningAlready) {
-      console.warn('通过 umi 获取 Redux useSelector 失败');
-      useReduxSelectorWarningAlready = true;
-    }
-    return null;
-  }
-};
-
-export const CreatRowKey = (record: any, index: number): string => {
-  return record.id || index;
 };
 
 export function LightenColor(hex: string, lum: number) {

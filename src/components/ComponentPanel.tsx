@@ -13,12 +13,13 @@ const { Panel } = Collapse;
 interface ComponentItemProps extends IComponentDefinition {
   id: string;
   name: string;
+  title?: string;
   type: string;
   createDragObject: CreateDragObjectFunc;
 }
 
 function ComponentItem(props: ComponentItemProps) {
-  const { id, name, icon, createDragObject } = props;
+  const { id, name, title, icon, createDragObject } = props;
   const item = createDragObject(props);
   const [, drag] = useDrag({
     item: () => ({
@@ -35,7 +36,7 @@ function ComponentItem(props: ComponentItemProps) {
       <div className="component-icon">
         <Icon name={icon || ''} />
       </div>
-      <div className="component-info">{name}</div>
+      <div className="component-info">{title || name}</div>
     </li>
   );
 }
