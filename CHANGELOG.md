@@ -1,3 +1,12 @@
+## [0.1.12](https://github.com/limaofeng/sunmao-editor/compare/v0.1.11...v0.1.12) (2021-11-24)
+
+
+### Features
+
+* 高度按照实际图片尺寸计算 ([d78bd17](https://github.com/limaofeng/sunmao-editor/commit/d78bd17f55dbcaf49a07ba80bfd7f156c22d4993))
+
+
+
 ## [0.1.11](https://github.com/limaofeng/sunmao-editor/compare/v0.1.10...v0.1.11) (2021-11-24)
 
 
