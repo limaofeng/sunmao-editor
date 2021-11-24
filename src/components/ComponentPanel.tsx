@@ -10,7 +10,6 @@ import { generateUUID } from '@asany/editor';
 const { Panel } = Collapse;
 
 interface ComponentItemProps extends IComponentDefinition {
-  id: string;
   name: string;
   title?: string;
   type: string;
@@ -18,7 +17,7 @@ interface ComponentItemProps extends IComponentDefinition {
 }
 
 function ComponentItem(props: ComponentItemProps) {
-  const { id, name, title, cover, createDragObject } = props;
+  const { name, title, cover, createDragObject } = props;
   const item = createDragObject(props);
   const [, drag] = useDrag({
     item: () => ({
@@ -31,7 +30,7 @@ function ComponentItem(props: ComponentItemProps) {
     }),
   });
   return (
-    <li key={id}>
+    <li>
       <div className="component-icon" ref={drag}>
         <img src={cover} alt={title} />
       </div>
@@ -56,6 +55,8 @@ function ComponentPanel() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [groups.map((item) => item.title).join(',')]);
 
+  console.log('groups', groups);
+
   return (
     <div className="componet-list-wrap">
       <Collapse
@@ -70,7 +71,7 @@ function ComponentPanel() {
           <Panel header={group.title} key={group.title}>
             <ul className="component-content show-list">
               {group.components.map((item) => (
-                <ComponentItem key={item.id} {...item} createDragObject={group.createDragObject} type={group.type} />
+                <ComponentItem key={item.name} {...item} createDragObject={group.createDragObject} type={group.type} />
               ))}
             </ul>
           </Panel>
