@@ -4,7 +4,6 @@ import { CaretRightOutlined } from '@ant-design/icons';
 import { Collapse } from 'antd';
 import { useDrag } from 'react-dnd';
 import { CreateDragObjectFunc, IComponentDefinition, useSymbols } from 'sunmao';
-import { Icon } from '@asany/icons';
 import { useSelector } from '@asany/editor';
 import { generateUUID } from '@asany/editor';
 
@@ -19,7 +18,7 @@ interface ComponentItemProps extends IComponentDefinition {
 }
 
 function ComponentItem(props: ComponentItemProps) {
-  const { id, name, title, icon, createDragObject } = props;
+  const { id, name, title, cover, createDragObject } = props;
   const item = createDragObject(props);
   const [, drag] = useDrag({
     item: () => ({
@@ -32,9 +31,9 @@ function ComponentItem(props: ComponentItemProps) {
     }),
   });
   return (
-    <li key={id} ref={drag}>
-      <div className="component-icon">
-        <Icon name={icon || ''} />
+    <li key={id}>
+      <div className="component-icon" ref={drag}>
+        <img src={cover} alt={title} />
       </div>
       <div className="component-info">{title || name}</div>
     </li>
@@ -69,7 +68,7 @@ function ComponentPanel() {
       >
         {groups.map((group) => (
           <Panel header={group.title} key={group.title}>
-            <ul className="component-content">
+            <ul className="component-content show-list">
               {group.components.map((item) => (
                 <ComponentItem key={item.id} {...item} createDragObject={group.createDragObject} type={group.type} />
               ))}

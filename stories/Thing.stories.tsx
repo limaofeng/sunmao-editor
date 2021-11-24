@@ -30,16 +30,23 @@ export default meta;
 
 @library({ name: 'test', description: '测试库', namespace: 'cn.asany.ui.sunmao.test' })
 class TestLibrary {
-  @component()
+  @component({
+    symbols: [
+      {
+        title: 'sdfsdf',
+        selector: () => true,
+      },
+    ],
+  })
   showme = Showme;
 
-  @component({ name: 'Boot' })
+  @component({ name: 'Boot', title: 'Boot', icon: '', cover: 'http://localhost:5500/images/blocks/intro/hero-1.jpg' })
   boot() {
     return () => <div>---boot---</div>;
   }
 }
 
-const Template: Story<any> = (_args) => {
+export const SunmaoEditorDemo = () => {
   const sunmao = new Sunmao();
   const x = new TestLibrary();
   sunmao.addLibrary(x as any);
@@ -47,27 +54,33 @@ const Template: Story<any> = (_args) => {
   return (
     <DndProvider backend={HTML5Backend}>
       <SunmaoProvider sunmao={sunmao}>
-        <ApolloProvider client={client}>
-          <IconProvider>
-            <SunmaoEditor
-              id="0"
-              name="测试"
-              onSave={(data) => console.log(data)}
-              data={{
-                id: '231',
-                template: 'cn.asany.ui.sunmao.test.Showme',
-                blocks: [
-                  {
-                    key: 'xxx',
-                    props: { title: '观自在菩萨' },
-                  },
-                ],
-              }}
-            />
-          </IconProvider>
-        </ApolloProvider>
+        <SunmaoEditor
+          id="0"
+          name="测试"
+          onSave={(data) => console.log(data)}
+          data={{
+            id: '231',
+            template: 'cn.asany.ui.sunmao.test.Showme',
+            blocks: [
+              {
+                key: 'xxx',
+                props: { title: '观自在菩萨' },
+              },
+            ],
+          }}
+        />
       </SunmaoProvider>
     </DndProvider>
+  );
+};
+
+const Template: Story<any> = (_args) => {
+  return (
+    <ApolloProvider client={client}>
+      <IconProvider>
+        <SunmaoEditorDemo />
+      </IconProvider>
+    </ApolloProvider>
   );
 };
 
