@@ -1,3 +1,12 @@
+## [0.1.13](https://github.com/limaofeng/sunmao-editor/compare/v0.1.12...v0.1.13) (2021-11-24)
+
+
+### Features
+
+* 删除 ComponentItemProps 的 id ([4048319](https://github.com/limaofeng/sunmao-editor/commit/404831923f787fcb7db8a3fd8410c0ef2a9977d7))
+
+
+
 ## [0.1.12](https://github.com/limaofeng/sunmao-editor/compare/v0.1.11...v0.1.12) (2021-11-24)
 
 
