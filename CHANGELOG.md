@@ -1,3 +1,12 @@
+## [0.1.15](https://github.com/limaofeng/sunmao-editor/compare/v0.1.14...v0.1.15) (2021-11-25)
+
+
+### Bug Fixes
+
+* 不依赖公共组件 ([ae55799](https://github.com/limaofeng/sunmao-editor/commit/ae55799e9462e797a0b237b2f834b8e916c3728e))
+
+
+
 ## [0.1.14](https://github.com/limaofeng/sunmao-editor/compare/v0.1.13...v0.1.14) (2021-11-25)
 
 
