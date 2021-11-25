@@ -1,3 +1,12 @@
+## [0.1.14](https://github.com/limaofeng/sunmao-editor/compare/v0.1.13...v0.1.14) (2021-11-25)
+
+
+### Features
+
+* data 与 onSave 的结构一致 ([27636c3](https://github.com/limaofeng/sunmao-editor/commit/27636c3f37e573adbb3bdf2ef97e3b6e826f7837))
+
+
+
 ## [0.1.13](https://github.com/limaofeng/sunmao-editor/compare/v0.1.12...v0.1.13) (2021-11-24)
 
 
