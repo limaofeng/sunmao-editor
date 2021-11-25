@@ -30,8 +30,8 @@ export default (sketch: Sketch, dashboard: React.ReactNode): EditorPlugin => ({
           const newProject = {
             ...project,
             data: {
-              id: project.data.id || '',
-              props: data
+              ...project.data,
+              blocks: data
                 .map(({ key, props: { blockTitle, ...props } = {} }) => ({ key, props }))
                 .filter((item) => Object.keys(item.props).length),
             },
