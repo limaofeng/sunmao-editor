@@ -58,14 +58,12 @@
       ]
     }
   ],
-  "dependencies": {
-    "@asany/editor": "^0.2.15",
-    "@asany/icons": "^0.2.2",
-    "@asany/sortable": "^0.1.30",
-    "sunmao": "^0.2.28"
-  },
   "devDependencies": {
-    "@apollo/client": "^3.5.4",
+    "@asany/editor": "^0.2.15",
+    "@asany/icons": "^0.2.3",
+    "@asany/sortable": "^0.1.30",
+    "sunmao": "^0.2.29",
+    "@apollo/client": "^3.5.5",
     "@babel/core": "^7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
