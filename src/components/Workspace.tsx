@@ -40,12 +40,12 @@ function Workspace() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const handleBlockMouseEnter = useCallback((key) => {
+  const handleBlockMouseEnter = useCallback((key: string) => {
     dispatch({ type: SketchActionType.BLOCK_MOUSE_ENTER, payload: { key } });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const handleBlockMouseLeave = useCallback((key) => {
+  const handleBlockMouseLeave = useCallback((key: string) => {
     dispatch({ type: SketchActionType.BLOCK_MOUSE_LEAVE, payload: { key } });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

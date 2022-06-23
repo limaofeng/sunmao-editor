@@ -41,7 +41,7 @@ function Sidebar(props: SidebarProps) {
     }
     setActive(true);
   }, []);
-  const handleResize = useCallback((y) => {
+  const handleResize = useCallback((y: number) => {
     state.current.outlinePaneHeight += y;
     state.current.outlinePaneExpanded = state.current.outlinePaneHeight > SUBPANEL_MIN_HEIGHT;
     forceRender();

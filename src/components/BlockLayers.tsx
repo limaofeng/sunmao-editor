@@ -39,7 +39,7 @@ function BlockLayers() {
     return formatTreeData(blocks);
   }, [blocks]);
 
-  const handleSelect = useCallback((e) => {
+  const handleSelect = useCallback((e: any) => {
     dispatch({ type: SketchActionType.BLOCK_ACTIVE_KEY, payload: e.node.component + ':' + e.node.key });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
