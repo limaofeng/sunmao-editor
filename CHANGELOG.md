@@ -1,3 +1,12 @@
+## [0.1.16](https://github.com/limaofeng/sunmao-editor/compare/v0.1.15...v0.1.16) (2022-06-23)
+
+
+### Features
+
+* 升级依赖 ([e57dfdf](https://github.com/limaofeng/sunmao-editor/commit/e57dfdf34e343c2b9d1dfcef273621d839bc307d))
+
+
+
 ## [0.1.15](https://github.com/limaofeng/sunmao-editor/compare/v0.1.14...v0.1.15) (2021-11-25)
 
 
