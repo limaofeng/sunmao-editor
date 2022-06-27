@@ -1,3 +1,12 @@
+## [0.1.18](https://github.com/limaofeng/sunmao-editor/compare/v0.1.17...v0.1.18) (2022-06-27)
+
+
+### Bug Fixes
+
+* 设置 useReactComponent  dev 为 true ([1226e38](https://github.com/limaofeng/sunmao-editor/commit/1226e38e8798980cbd5e257cd1b12b3ba066449f))
+
+
+
 ## [0.1.17](https://github.com/limaofeng/sunmao-editor/compare/v0.1.16...v0.1.17) (2022-06-27)
 
 
