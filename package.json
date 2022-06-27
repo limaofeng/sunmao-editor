@@ -59,14 +59,14 @@
     }
   ],
   "devDependencies": {
-    "@asany/editor": "^0.2.26",
-    "@asany/icons": "^0.2.12",
-    "@asany/sortable": "^0.1.32",
-    "sunmao": "^0.2.31",
     "@apollo/client": "^3.6.9",
+    "@asany/editor": "^0.2.27",
+    "@asany/icons": "^0.2.12",
+    "@asany/sortable": "^0.1.36",
+    "@asany/tree": "^0.1.23",
     "@babel/core": "^7.18.5",
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@size-limit/preset-small-lib": "^7.0.8",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-info": "^5.3.21",
@@ -102,6 +102,7 @@
     "react-is": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^7.0.8",
+    "sunmao": "^0.2.32",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
