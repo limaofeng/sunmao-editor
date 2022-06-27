@@ -33,6 +33,7 @@ function Workspace() {
 
   const component = useReactComponent(data.template, data.blocks, {
     id: data.id,
+    dev: true,
   });
 
   const handleBlockClick = useCallback((id: string) => {
