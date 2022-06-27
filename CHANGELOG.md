@@ -1,3 +1,12 @@
+## [0.1.17](https://github.com/limaofeng/sunmao-editor/compare/v0.1.16...v0.1.17) (2022-06-27)
+
+
+### Bug Fixes
+
+* 添加拖拽预览演示 ([1e137cb](https://github.com/limaofeng/sunmao-editor/commit/1e137cb2ffd313eb11f8d45839eed475244dd529))
+
+
+
 ## [0.1.16](https://github.com/limaofeng/sunmao-editor/compare/v0.1.15...v0.1.16) (2022-06-23)
 
 
