@@ -1,3 +1,12 @@
+## [0.1.19](https://github.com/limaofeng/sunmao-editor/compare/v0.1.18...v0.1.19) (2022-07-13)
+
+
+### Features
+
+* 实现组件选择组件 ([eecfe2b](https://github.com/limaofeng/sunmao-editor/commit/eecfe2b81692cc2e3de1b6bd90221886616f150f))
+
+
+
 ## [0.1.18](https://github.com/limaofeng/sunmao-editor/compare/v0.1.17...v0.1.18) (2022-06-27)
 
 
