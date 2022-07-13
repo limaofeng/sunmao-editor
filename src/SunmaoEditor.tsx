@@ -6,6 +6,7 @@ import type { AsanyProject } from '@asany/editor';
 
 import { SunmaoEditorProps, SunmaoProject } from './typings';
 import sketchPlugin from './plugin';
+import './icons';
 
 function InternalSunmaoEditor(props: SunmaoEditorProps) {
   const { id, name, data, dashboard, onSave } = props;

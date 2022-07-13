@@ -60,11 +60,11 @@
   ],
   "devDependencies": {
     "@apollo/client": "^3.6.9",
-    "@asany/editor": "^0.2.27",
-    "@asany/icons": "^0.2.12",
+    "@asany/editor": "^0.2.41",
+    "@asany/icons": "^0.2.13",
     "@asany/sortable": "^0.1.36",
-    "@asany/tree": "^0.1.23",
-    "@babel/core": "^7.18.5",
+    "@asany/tree": "^0.1.28",
+    "@babel/core": "^7.18.6",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@size-limit/preset-small-lib": "^7.0.8",
@@ -75,10 +75,11 @@
     "@storybook/addons": "^6.5.9",
     "@storybook/react": "^6.5.9",
     "@types/lodash-es": "^4.17.6",
-    "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.5",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "@types/react-frame-component": "^4.1.3",
-    "antd": "^4.21.3",
+    "@typescript-eslint/typescript-estree": "^5.30.6",
+    "antd": "^4.21.6",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
     "conventional-changelog-cli": "^2.2.2",
@@ -102,14 +103,15 @@
     "react-is": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^7.0.8",
-    "sunmao": "^0.2.33",
+    "sunmao": "^0.2.37",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
   "resolutions": {
     "**/@typescript-eslint/eslint-plugin": "^4.1.1",
-    "**/@typescript-eslint/parser": "^4.1.1"
+    "**/@typescript-eslint/parser": "^4.1.1",
+    "**/@typescript-eslint/typescript-estree": "^5.30.5"
   },
   "jest": {
     "verbose": true,
