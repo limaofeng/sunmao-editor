@@ -1,13 +1,32 @@
 import React, { useCallback } from 'react';
 
+import { IComponentDefinition } from 'sunmao';
 import classnames from 'classnames';
 import { ListTree, ScrubbableControl } from '@asany/editor';
-import { IComponent, ListTreeNode, ListTreeNodeRenderProps } from '@asany/editor/dist/typings';
+import { ListTreeNode, ListTreeNodeRenderProps } from '@asany/editor/dist/typings';
 import { Icon } from '@asany/icons';
 
-interface IconRenderProps extends ListTreeNodeRenderProps, IComponent {
+interface IconRenderProps extends ListTreeNodeRenderProps, IComponentDefinition {
   value: string;
   label: string;
+}
+
+type ComponentPreviewProps = {
+  data: IComponentDefinition;
+};
+
+function ComponentPreview(props: ComponentPreviewProps) {
+  const { data } = props;
+  const cover = data.cover ? (
+    React.isValidElement(data.cover) ? (
+      data.cover
+    ) : (
+      <img src={data.cover} alt={data.title} />
+    )
+  ) : (
+    <Icon name={data.icon || 'SunmaoEditor/ListItemBack'} />
+  );
+  return <div className="component-preview">{cover}</div>;
 }
 
 const ComponentRender: React.ComponentType<IconRenderProps> = function (props: IconRenderProps) {
@@ -16,10 +35,7 @@ const ComponentRender: React.ComponentType<IconRenderProps> = function (props: I
   const onChange = props.onChange;
   const value = props.value;
 
-  console.log('handleClick', props);
-
   const handleClick = useCallback(() => {
-    console.log('handleClick', value);
     onChange && onChange(value);
   }, [onChange, value]);
 
@@ -28,8 +44,12 @@ const ComponentRender: React.ComponentType<IconRenderProps> = function (props: I
       onClick={handleClick}
       className={classnames('tree-node-item tw-flex tw-flex-col tw-justify-end tw-items-center', { active: selected })}
     >
-      <Icon name={item.icon || 'SunmaoEditor/ListItemBack'} />
-      <span className="tree-node-item-title">{item.name}</span>
+      <div className="component-item-container">
+        <ComponentPreview data={item} />
+        <span className="tree-node-item-title">
+          <span>{item.title}</span>
+        </span>
+      </div>
     </li>
   );
 };

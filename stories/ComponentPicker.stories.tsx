@@ -36,6 +36,7 @@ class TestLibrary {
   @component({
     title: 'Showme',
     tags: ['测试'],
+    cover: 'https://share.cleanshot.com/GY3hef/download',
     symbols: [
       {
         title: 'sdfsdf',
@@ -50,7 +51,7 @@ class TestLibrary {
     title: 'Boot',
     tags: ['测试'],
     icon: '',
-    cover: 'http://localhost:5500/images/blocks/intro/hero-1.jpg',
+    cover: 'https://share.cleanshot.com/BUDLJm/download',
   })
   boot() {
     return () => <div>---boot---</div>;
