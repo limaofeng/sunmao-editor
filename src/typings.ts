@@ -36,3 +36,10 @@ export interface SunmaoEditorProps {
 export type SunmaoProjectType = 'component';
 
 export type SunmaoProject = AsanyProject<IComponentData, SunmaoProjectType>;
+
+export type ComponentPickerProps = {
+  value?: string;
+  onChange?: (value: string) => void;
+  tags?: string[];
+  placeholder?: string;
+};

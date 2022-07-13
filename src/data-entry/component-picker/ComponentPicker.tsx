@@ -4,14 +4,9 @@ import { ComponentTreeNode } from 'sunmao/dist/typings';
 import { Select } from '@asany/editor';
 import { useSunmao } from 'sunmao';
 
-import Dialog from './components/Dialog';
+import { ComponentPickerProps } from '../../typings';
 
-type ComponentPickerProps = {
-  value?: string;
-  onChange?: (value: string) => void;
-  tags?: string[];
-  placeholder?: string;
-};
+import Dialog from './components/Dialog';
 
 function handleGetComponent(nodes: ComponentTreeNode[], key: string): ComponentTreeNode | undefined {
   for (const node of nodes) {
