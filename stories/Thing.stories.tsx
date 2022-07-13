@@ -46,7 +46,7 @@ class TestLibrary {
   }
 }
 
-const SunmaoEditorDemo = () => {
+export const SunmaoEditorDemo = () => {
   const sunmao = new Sunmao();
   const x = new TestLibrary();
   sunmao.addLibrary(x as any);
