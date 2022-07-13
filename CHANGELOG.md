@@ -1,3 +1,7 @@
+## [0.1.20](https://github.com/limaofeng/sunmao-editor/compare/v0.1.19...v0.1.20) (2022-07-13)
+
+
+
 ## [0.1.19](https://github.com/limaofeng/sunmao-editor/compare/v0.1.18...v0.1.19) (2022-07-13)
 
 
