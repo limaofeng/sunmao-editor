@@ -1,3 +1,12 @@
+## [0.1.21](https://github.com/limaofeng/sunmao-editor/compare/v0.1.20...v0.1.21) (2022-07-13)
+
+
+### Features
+
+* 优化组件选择的展示效果 ([3439802](https://github.com/limaofeng/sunmao-editor/commit/3439802fe90f0b69b95e8a9e5152e3dec9da8fb7))
+
+
+
 ## [0.1.20](https://github.com/limaofeng/sunmao-editor/compare/v0.1.19...v0.1.20) (2022-07-13)
 
 
