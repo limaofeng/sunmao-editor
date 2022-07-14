@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { IComponentBlockData } from 'sunmao';
+import { ComponentTreeNode, IComponentBlockData } from 'sunmao';
 import { AsanyProject } from '@asany/editor';
 
 export interface IComponentData {
@@ -39,6 +39,7 @@ export type SunmaoProject = AsanyProject<IComponentData, SunmaoProjectType>;
 
 export type ComponentPickerProps = {
   value?: string;
+  treeDate?: ComponentTreeNode[];
   onChange?: (value: string) => void;
   tags?: string[];
   placeholder?: string;

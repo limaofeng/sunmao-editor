@@ -14574,12 +14574,13 @@ stylis@^4.0.6:
   resolved "https://registry.npmjs.org/stylis/-/stylis-4.1.1.tgz#e46c6a9bbf7c58db1e65bb730be157311ae1fe12"
   integrity sha512-lVrM/bNdhVX2OgBFNa2YJ9Lxj7kPzylieHd3TNjuGE0Re9JB7joL5VUKOVH1kdNNJTgGPpT8hmwIAPLaSyEVFQ==
 
-sunmao@^0.2.37:
-  version "0.2.37"
-  resolved "https://registry.npmjs.org/sunmao/-/sunmao-0.2.37.tgz#f7a97529b8a2193574acd4667982df8faac9d433"
-  integrity sha512-Et//HOh2yQNkOUGAOiSVLsvLCppcxusZUnNIogkw49642Kfl2A8O0iPxx1AZl22GuxNNy554GQXWUmNnvJ+6Og==
+sunmao@^0.2.38:
+  version "0.2.38"
+  resolved "https://registry.npmjs.org/sunmao/-/sunmao-0.2.38.tgz#9d046c37437eba16d11e0fa0d72618eff38e6df3"
+  integrity sha512-Uz/ETcQ+VYx3tS5eg/Zi62Tqhv4IHZne+hIy6P1dMRDxgKs9cMh9nbSu+fGnkR0Q3G2TM0aIEI4Edv1KHS/YwQ==
   dependencies:
     classnames "^2.3.1"
+    dexie "^3.2.0"
     lodash-es "^4.17.21"
     reflect-metadata "^0.1.13"
 
