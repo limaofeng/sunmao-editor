@@ -1,3 +1,12 @@
+## [0.1.23](https://github.com/limaofeng/sunmao-editor/compare/v0.1.22...v0.1.23) (2022-07-14)
+
+
+### Features
+
+*  组件选择支持自定义数据 ([d5f28b3](https://github.com/limaofeng/sunmao-editor/commit/d5f28b3461b55312b8e1499513fb15c839fbbff0))
+
+
+
 ## [0.1.22](https://github.com/limaofeng/sunmao-editor/compare/v0.1.21...v0.1.22) (2022-07-13)
 
 
