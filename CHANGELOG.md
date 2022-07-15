@@ -1,3 +1,12 @@
+## [0.1.25](https://github.com/limaofeng/sunmao-editor/compare/v0.1.24...v0.1.25) (2022-07-15)
+
+
+### Features
+
+* 支持 onBack ([0189a57](https://github.com/limaofeng/sunmao-editor/commit/0189a57fe90b937dd44faaf31d18501488253351))
+
+
+
 ## [0.1.24](https://github.com/limaofeng/sunmao-editor/compare/v0.1.23...v0.1.24) (2022-07-15)
 
 
