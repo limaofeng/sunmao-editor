@@ -31,7 +31,11 @@ export interface SunmaoEditorProps {
   dashboard?: ReactNode;
 
   onSave: OnSave;
+
+  onBack?: OnBack;
 }
+
+export type OnBack = () => void;
 
 export type SunmaoProjectType = 'component';
 

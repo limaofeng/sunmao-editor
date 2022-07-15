@@ -9,7 +9,7 @@ import sketchPlugin from './plugin';
 import './icons';
 
 function InternalSunmaoEditor(props: SunmaoEditorProps) {
-  const { id, name, data, dashboard, onSave } = props;
+  const { id, name, data, dashboard, onSave, onBack } = props;
 
   const sketch = useSketch();
 
@@ -26,6 +26,7 @@ function InternalSunmaoEditor(props: SunmaoEditorProps) {
     <AsanyEditor
       plugins={[sketchPlugin(sketch, dashboard)]}
       onSave={handleSave}
+      onBack={onBack}
       className="sunmao-editor"
       project={project}
     />
