@@ -11,11 +11,9 @@ import Dialog from './components/Dialog';
 function handleGetComponent(nodes: ComponentTreeNode[], key: string): ComponentTreeNode | undefined {
   for (const node of nodes) {
     if (node.value === key) {
-      console.log('node', node);
       return node;
     }
     const _node = node.children?.length ? handleGetComponent(node.children, key) : undefined;
-    console.log('node', _node);
     if (_node) {
       return _node;
     }

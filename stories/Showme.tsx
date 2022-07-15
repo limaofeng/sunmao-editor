@@ -44,8 +44,6 @@ function Showme() {
     },
   });
 
-  console.log('>>>>>', props.title);
-
   return (
     <Provider style={{ flex: 1 }} clickable>
       Show me your code: {props.title} <br /> key = {key}

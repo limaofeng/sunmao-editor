@@ -21,7 +21,6 @@ function Dialog({ value, close, visible, onChange, options: treeData }: DialogPr
 
   const handleChange = useCallback(
     (name: string) => {
-      console.log('handleChange', name);
       onChange(name);
       close();
     },

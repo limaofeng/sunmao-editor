@@ -11,7 +11,6 @@ type ComponentLoaderProps = {
 
 function ComponentLoader({ id, component, className, style }: ComponentLoaderProps, ref: any) {
   const info = useComponent(component);
-  // console.log('ComponentLoader', id, info);
 
   if (!info) {
     return <div>组件缺失：{component}</div>;
