@@ -1,3 +1,12 @@
+## [0.1.26](https://github.com/limaofeng/sunmao-editor/compare/v0.1.25...v0.1.26) (2022-07-20)
+
+
+### Features
+
+* 支持设置 viewport ([ab658e3](https://github.com/limaofeng/sunmao-editor/commit/ab658e3f195219c760c6dbf4ca588ef5c73c11b8))
+
+
+
 ## [0.1.25](https://github.com/limaofeng/sunmao-editor/compare/v0.1.24...v0.1.25) (2022-07-15)
 
 
