@@ -62,10 +62,10 @@
     tslib "^2.3.0"
     zen-observable-ts "^1.2.5"
 
-"@asany/editor@^0.2.41":
-  version "0.2.41"
-  resolved "https://registry.npmjs.org/@asany/editor/-/editor-0.2.41.tgz#40f12176ada12b1498070cdda6206db28003f874"
-  integrity sha512-H0VbI1Os2jn98adsmX/hTLavemE0Wy+rc9f5nOoBe91ouRdmpDkAJg3CaRQRdRlRB3yuNgIZVXon77GQvh3GFA==
+"@asany/editor@^0.2.45":
+  version "0.2.45"
+  resolved "https://registry.npmjs.org/@asany/editor/-/editor-0.2.45.tgz#deb27cf850046a1c093b095ff2e25d2c07c755bc"
+  integrity sha512-phvmeNlpLGItoBqaplM4YNTh3wgsNSJDyCwQTkYxA6ioxMEKYcsQ5aH7o+N7k2VlQX+G0IcrvaCHMDUeVtoZvg==
   dependencies:
     "@asany/sortable" "^0.1.36"
     "@daybrush/drag" "^0.19.3"
@@ -1999,6 +1999,11 @@
   version "2.0.0"
   resolved "https://registry.npmjs.org/@react-dnd/shallowequal/-/shallowequal-2.0.0.tgz#a3031eb54129f2c66b2753f8404266ec7bf67f0a"
   integrity sha512-Pc/AFTdwZwEKJxFJvlxrSmGe/di+aAOBn60sremrpLo6VI/6cmiUYNNwlI5KNYttg7uypzA3ILPMPgxB2GYZEg==
+
+"@react-hook/merged-ref@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.npmjs.org/@react-hook/merged-ref/-/merged-ref-1.3.2.tgz#919b387a5f79ed67f2578f2015ab7b7d337787d2"
+  integrity sha512-cQ9Y8m4zlrw/qotReo33E+3Sy9FVqMZb5JwUlb3wj3IJJ1cNJtxcgfWF6rS2NZQrfBJ2nAnckUdPJjMyIJTNZg==
 
 "@rollup/plugin-babel@^5.1.0":
   version "5.3.1"
@@ -14593,10 +14598,10 @@ stylis@^4.0.6:
   resolved "https://registry.npmjs.org/stylis/-/stylis-4.1.1.tgz#e46c6a9bbf7c58db1e65bb730be157311ae1fe12"
   integrity sha512-lVrM/bNdhVX2OgBFNa2YJ9Lxj7kPzylieHd3TNjuGE0Re9JB7joL5VUKOVH1kdNNJTgGPpT8hmwIAPLaSyEVFQ==
 
-sunmao@^0.2.38:
-  version "0.2.38"
-  resolved "https://registry.npmjs.org/sunmao/-/sunmao-0.2.38.tgz#9d046c37437eba16d11e0fa0d72618eff38e6df3"
-  integrity sha512-Uz/ETcQ+VYx3tS5eg/Zi62Tqhv4IHZne+hIy6P1dMRDxgKs9cMh9nbSu+fGnkR0Q3G2TM0aIEI4Edv1KHS/YwQ==
+sunmao@^0.2.40:
+  version "0.2.40"
+  resolved "https://registry.npmjs.org/sunmao/-/sunmao-0.2.40.tgz#d35f6caf41f50faa0d49fa0b7c70867060782092"
+  integrity sha512-Ro+TArfIH1CzaV+0qHMsFkTa9WmATN2eszwrUmxR8Z03/NodITqhC3HzXypVrrnXcZf4g7iK5RpZp2uMWUla9A==
   dependencies:
     classnames "^2.3.1"
     dexie "^3.2.0"

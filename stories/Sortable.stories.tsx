@@ -94,6 +94,7 @@ const SunmaoEditorDemo = () => {
         <SunmaoEditor
           id="0"
           name="测试"
+          viewport="iPhone 8"
           onSave={(data) => console.log(data)}
           data={{
             id: '231',

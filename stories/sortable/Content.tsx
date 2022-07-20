@@ -98,6 +98,7 @@ function Content() {
           tag="div"
           items={items}
           accept={['component']}
+          layout="grid"
           itemRender={ContentItemRender}
           className={classnames('content-wrap', { _holder: !items.length })}
           onChange={handleChange}

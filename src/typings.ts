@@ -11,6 +11,21 @@ export interface IComponentData {
 
 export type OnSave = (data: IComponentData) => void;
 
+export type Viewport =
+  | 'iPhone 8'
+  | 'iPhone 8 Plus'
+  | '10.2" iPad'
+  | '10.5" iPad Air'
+  | '11" iPad Pro'
+  | '12.9" iPad Pro'
+  | 'Desktop'
+  | 'Desktop HD'
+  | 'Apple TV'
+  | 'A4'
+  | 'fullscreen'
+  | {
+      size: [number, number];
+    };
 export interface SunmaoEditorProps {
   /**
    * 唯一标识
@@ -33,6 +48,10 @@ export interface SunmaoEditorProps {
   onSave: OnSave;
 
   onBack?: OnBack;
+  /**
+   * 视图
+   */
+  viewport?: Viewport;
 }
 
 export type OnBack = () => void;

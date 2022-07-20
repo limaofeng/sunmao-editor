@@ -110,31 +110,6 @@ export default (sketch: Sketch, dashboard: React.ReactNode): EditorPlugin => ({
   },
   scena: {
     workspace: Workspace,
-    /*  onClick: (editor) => {
-      editor.aside.open(
-        '属性面板',
-        () => {
-          return (
-            <div
-              style={{
-                padding: 8,
-                color: '#727d83',
-                fontSize: 16,
-                height: 'calc(100vh - 270px)',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              <span>属性面板</span>
-            </div>
-          );
-        },
-        {
-          width: 380,
-        }
-      );
-    }, */
   },
-  features: ['zoom', 'ruler'],
+  features: ['ruler'],
 });
