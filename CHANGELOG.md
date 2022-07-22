@@ -1,3 +1,12 @@
+## [0.1.27](https://github.com/limaofeng/sunmao-editor/compare/v0.1.26...v0.1.27) (2022-07-22)
+
+
+### Bug Fixes
+
+* store.getBlock(block.key) is null 的问题 ([3c50b55](https://github.com/limaofeng/sunmao-editor/commit/3c50b55b24ce3ca76454b33f701354d464441fb8))
+
+
+
 ## [0.1.26](https://github.com/limaofeng/sunmao-editor/compare/v0.1.25...v0.1.26) (2022-07-20)
 
 
