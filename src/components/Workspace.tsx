@@ -92,7 +92,7 @@ function Workspace() {
       update: block.update,
       watchValue: (callback: (value: any) => void) => {
         const handleChange = () => {
-          callback(store.getBlock(block.key)!.props);
+          callback(store.getBlock(block.key)?.props);
         };
         return store.subscribe(handleChange);
       },

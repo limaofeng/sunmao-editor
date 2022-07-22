@@ -92,7 +92,7 @@ function Content() {
   zoom.current = _zoom;
 
   return (
-    <Provider style={{ width: '100%' }}>
+    <Provider style={{ width: '100%' }} deps={[items]}>
       <section id="content">
         <Sortable
           tag="div"

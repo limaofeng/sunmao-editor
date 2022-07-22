@@ -67,12 +67,14 @@ class TestLibrary {
         },
       });
 
+      console.log('key', props.id, key);
+
       return (
-        <div ref={drag && drag(ref)} className={className} style={{ ...style }}>
-          <Provider style={{ flex: 1 }} clickable>
+        <Provider clickable>
+          <div ref={drag && drag(ref)} className={className} style={{ ...style }}>
             <div style={{ height: 100 }}>---boot--- {blockProps.title}</div>
-          </Provider>
-        </div>
+          </div>
+        </Provider>
       );
     };
   }
@@ -172,12 +174,6 @@ const SunmaoEditorDemo = () => {
                 key: 'content/0a1c4310-5d22-46ca-868a-f8e6bf90c871',
                 props: {
                   title: '4444',
-                },
-              },
-              {
-                key: 'content/7aa2cdb0-b9c1-44c9-8e90-c3dd5d72423b',
-                props: {
-                  title: '5555',
                 },
               },
             ],
